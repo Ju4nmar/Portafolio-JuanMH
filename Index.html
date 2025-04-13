@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de Juan Martín Hernández, desarrollador de software apasionado por la tecnología, seguridad informática y desarrollo web.">
+    <title>Portafolio de Juan Martín Hernández</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <!-- Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="icon" href="assets/imagenes/favicon.png" type="image/png" />
+    <!-- Fuentes de Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Inicio -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="assets/imagenes/Logo_JMH.png"
+            alt="Foto de Juan Martín Hernández, desarrollador"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#start">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <a
+          href="https://1drv.ms/b/c/223e641e7dd3c6b8/EbKcpHi-9zNFgsZf72nczOYBXaWIStgiwA2qwzH3W0K7yw?e=JDXOs6"
+          download
+          target="_blank"
+          class="cv-button"
+          >Descargar CV</a
+        >
+      </div>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="hero" id="start">
+      <div class="span_hero">
+        <h1><span class="element"></span></h1>
+      </div>
+      <div class="hero_info">
+        <div>
+          <p>
+            Soy un apasionado por la tecnología y el desarrollo de software,
+            siempre buscando nuevos retos y oportunidades para aprender y
+            crecer.
+          </p>
+        </div>
+        <div class="img-jmh">
+          <img src="assets/imagenes/juan.png" alt="Juan Hernández" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" data-aos="fade-up">
+      <div class="container">
+        <h2>Sobre Mí</h2>
+        <p>
+          Soy un estudiante de Ingeniería de Sistemas con una gran pasión por la
+          seguridad informática y el desarrollo de software. Me motiva aprender
+          constantemente y enfrentar nuevos desafíos. Tengo experiencia en
+          tecnologías como HTML, CSS, JavaScript, PHP, MySQL, Angular, Java, y
+          algo de React. Me considero una persona proactiva, rápida para
+          aprender y comprometida con la excelencia en cada proyecto que
+          emprendo. Mi objetivo es seguir desarrollando mis habilidades técnicas
+          y contribuir al éxito de proyectos innovadores en el campo de la
+          tecnología.
+        </p>
+      </div>
+    </section>
+    <section id="habilidades">
+      <h2>Mis Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="devicon-html5-plain" aria-label="HTML5"></i></div>
+        <div class="skill-item"><i class="devicon-css3-plain" aria-label="CSS"></i></div>
+        <div class="skill-item"><i class="devicon-javascript-plain" aria-label="JavaScript"></i></div>
+        <div class="skill-item"><i class="devicon-mysql-plain" aria-label="MySQL"></i></div>
+        <div class="skill-item"><i class="devicon-angularjs-plain" aria-label="Angular"></i></div>
+        <div class="skill-item"><i class="devicon-php-plain" aria-label="PHP"></i></div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" data-aos="fade-up">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="assets/imagenes/proyecto1.png" alt="Proyecto 1" />
+            <h3>Administracion de Restaurante</h3>
+            <p>Descripción del proyecto con acceso a este</p>
+          </div>
+          <div class="project">
+            <img src="assets/imagenes/proyecto2.png" alt="Proyecto 2" />
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto con acceso a este</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" data-aos="fade-up">
+      <div class="container">
+        <h2>Contáctame</h2>
+        <!-- TODO: conectar a backend o servicio de correo -->
+        <form action="#" >
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu nombre"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tuemail@gmail.com"
+            required
+          />
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Juan Martín Hernández. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Script/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
