@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio de Juan Martín Hernández, desarrollador de software apasionado por la tecnología, seguridad informática y desarrollo web.">
+    <meta
+      name="description"
+      content="Portafolio de Juan Martín Hernández, desarrollador de software apasionado por la tecnología, seguridad informática y desarrollo web."
+    />
     <title>Portafolio de Juan Martín Hernández</title>
     <link rel="stylesheet" href="Styles/style.css" />
     <!-- Iconos -->
@@ -11,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     />
-    <link rel="icon" href="assets/imagenes/favicon.png" type="image/png" />
+    <link rel="icon" href="assets/imagenes/Logo_JMH.png" type="image/png" />
     <!-- Fuentes de Google -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
@@ -24,13 +27,19 @@
     <!-- Inicio -->
     <header>
       <div class="container">
+        <!--
         <div class="logo">
-          <img
-            src="assets/imagenes/Logo_JMH.png"
-            alt="Foto de Juan Martín Hernández, desarrollador"
-          />
+          <img src="assets/imagenes/Logo_JMH.png" alt="Logo" />
+        </div> -->
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <nav>
+
+        <nav id="navbar">
           <ul>
             <li><a href="#start">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -38,10 +47,10 @@
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
+
         <a
           href="https://1drv.ms/b/c/223e641e7dd3c6b8/EbKcpHi-9zNFgsZf72nczOYBXaWIStgiwA2qwzH3W0K7yw?e=JDXOs6"
           download
-          target="_blank"
           class="cv-button"
           >Descargar CV</a
         >
@@ -50,11 +59,9 @@
 
     <!-- Sección de Presentación -->
     <section class="hero" id="start">
-      <div class="span_hero">
-        <h1><span class="element"></span></h1>
-      </div>
       <div class="hero_info">
         <div>
+          <h1><span class="element"></span></h1>
           <p>
             Soy un apasionado por la tecnología y el desarrollo de software,
             siempre buscando nuevos retos y oportunidades para aprender y
@@ -87,12 +94,24 @@
     <section id="habilidades">
       <h2>Mis Habilidades</h2>
       <div class="skills-grid">
-        <div class="skill-item"><i class="devicon-html5-plain" aria-label="HTML5"></i></div>
-        <div class="skill-item"><i class="devicon-css3-plain" aria-label="CSS"></i></div>
-        <div class="skill-item"><i class="devicon-javascript-plain" aria-label="JavaScript"></i></div>
-        <div class="skill-item"><i class="devicon-mysql-plain" aria-label="MySQL"></i></div>
-        <div class="skill-item"><i class="devicon-angularjs-plain" aria-label="Angular"></i></div>
-        <div class="skill-item"><i class="devicon-php-plain" aria-label="PHP"></i></div>
+        <div class="skill-item">
+          <i class="devicon-html5-plain" aria-label="HTML5"></i>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-css3-plain" aria-label="CSS"></i>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-javascript-plain" aria-label="JavaScript"></i>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-mysql-plain" aria-label="MySQL"></i>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-angularjs-plain" aria-label="Angular"></i>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-php-plain" aria-label="PHP"></i>
+        </div>
       </div>
     </section>
 
@@ -120,7 +139,7 @@
       <div class="container">
         <h2>Contáctame</h2>
         <!-- TODO: conectar a backend o servicio de correo -->
-        <form action="#" >
+        <form action="#">
           <label for="name">Nombre</label>
           <input
             type="text"
