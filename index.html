@@ -8,37 +8,38 @@
       content="Portafolio de Juan Martín Hernández, desarrollador de software apasionado por la tecnología, seguridad informática y desarrollo web."
     />
     <title>Portafolio de Juan Martín Hernández</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles/style.css" />
+
     <!-- Iconos -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="icon" href="assets/imagenes/Logo_JMH.png" type="image/png" />
-    <!-- Fuentes de Google -->
+
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- AOS CSS -->
+
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
   <body>
-    <!-- Inicio -->
+    <!-- Header -->
     <header>
       <div class="container">
-        <!--
-        <div class="logo">
-          <img src="assets/imagenes/Logo_JMH.png" alt="Logo" />
-        </div> -->
-
-        <!-- Botón hamburguesa -->
         <div class="menu-toggle" id="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
-
         <nav id="navbar">
           <ul>
             <li><a href="#start">Inicio</a></li>
@@ -47,10 +48,8 @@
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
-
         <a
           href="https://1drv.ms/b/c/223e641e7dd3c6b8/EbKcpHi-9zNFgsZf72nczOYBXaWIStgiwA2qwzH3W0K7yw?e=JDXOs6"
-          download
           target="_blank"
           class="cv-button"
           >Descargar CV</a
@@ -58,7 +57,7 @@
       </div>
     </header>
 
-    <!-- Sección de Presentación -->
+    <!-- Hero -->
     <section class="hero" id="start">
       <div class="hero_info">
         <div>
@@ -75,7 +74,7 @@
       </div>
     </section>
 
-    <!-- Sobre Mí -->
+    <!-- Sobre mí -->
     <section id="sobre-mi" data-aos="fade-up">
       <div class="container">
         <h2>Sobre Mí</h2>
@@ -92,6 +91,8 @@
         </p>
       </div>
     </section>
+
+    <!-- Habilidades -->
     <section id="habilidades">
       <h2>Mis Habilidades</h2>
       <div class="skills-grid">
@@ -123,7 +124,7 @@
         <div class="projects">
           <div class="project">
             <img src="assets/imagenes/proyecto1.png" alt="Proyecto 1" />
-            <h3>Administracion de Restaurante</h3>
+            <h3>Administración de Restaurante</h3>
             <p>Descripción del proyecto con acceso a este</p>
           </div>
           <div class="project">
@@ -137,47 +138,67 @@
 
     <!-- Contacto -->
     <section id="contacto" data-aos="fade-up">
-      <div class="container">
-        <h2>Contáctame</h2>
-        <!-- TODO: conectar a backend o servicio de correo -->
-        <form action="#">
-          <label for="name">Nombre</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Tu nombre"
-            required
-          />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="tuemail@gmail.com"
-            required
-          />
-          <label for="message">Mensaje</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Tu mensaje"
-            required
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+      <div class="container contacto-grid">
+        <div class="formulario">
+          <h2>Contáctame</h2>
+          <form id="contact-form">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="from_name"
+              placeholder="Tu nombre"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="from_email"
+              placeholder="tuemail@gmail.com"
+              required
+            />
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tu mensaje"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="contact-links">
+          <h3>O conéctate conmigo</h3>
+          <a
+            href="https://www.linkedin.com/in/juan-hernandez-32a39717b/"
+            target="_blank"
+            class="linkedin contact-btn"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <!--
+          <a
+            href="https://wa.me/57numero"
+            target="_blank"
+            class="whatsapp contact-btn"
+            ><i class="fab fa-whatsapp"></i> WhatsApp</a
+          >
+          -->
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p>&copy; 2024 Juan Martín Hernández. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Juan Martín Hernández. Todos los derechos reservados.</p>
       </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script/script.js"></script>
     <script>
