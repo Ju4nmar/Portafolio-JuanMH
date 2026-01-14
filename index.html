@@ -30,7 +30,12 @@
     />
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
   </head>
 
   <body>
@@ -130,12 +135,24 @@
         <h2>Proyectos</h2>
         <div class="projects">
           <div class="project">
-            <img src="assets/imagenes/proyecto1.png" alt="Proyecto 1" />
+            <img
+              src="assets/imagenes/proyecto1.webp"
+              width="400"
+              height="200"
+              loading="lazy"
+              alt="Proyecto 1"
+            />
             <h3>Administración de Restaurante</h3>
             <p>Descripción del proyecto con acceso a este</p>
           </div>
           <div class="project">
-            <img src="assets/imagenes/proyecto2.png" alt="Proyecto 2" />
+            <img
+              src="assets/imagenes/proyecto2.webp"
+              width="400"
+              height="200"
+              loading="lazy"
+              alt="Proyecto 2"
+            />
             <h3>Proyecto 2</h3>
             <p>Descripción del proyecto con acceso a este</p>
           </div>
@@ -204,12 +221,12 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="script/script.js" defer></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
