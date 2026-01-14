@@ -106,10 +106,10 @@ nav ul li a:hover {
 
 .hero_info {
   display: flex;
+  min-height: 100vh;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
 }
 
 .hero::after {
@@ -183,7 +183,7 @@ h2 {
 .project {
   background-color: var(--secondary-color);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden;  
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
@@ -443,7 +443,6 @@ footer {
   /* --- HERO --- */
   .hero {
     padding: 10px;
-    height: auto;
   }
 
   .hero_info {
@@ -451,6 +450,12 @@ footer {
     text-align: center;
     padding: 0;
     width: 100%;
+  }
+
+  .element{
+    min-height: 1.5em;
+    min-width: 260px;
+    position: absolute;
   }
 
   .hero h1 {
