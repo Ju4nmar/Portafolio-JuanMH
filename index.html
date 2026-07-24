@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Juan Martín Hernández | Desarrollador de Software</title>
+
     <meta
       name="description"
-      content="Portafolio de Juan Martín Hernández, desarrollador de software apasionado por la tecnología, seguridad informática y desarrollo web."
+      content="Portafolio de Juan Martín Hernández. Desarrollador de Software apasionado por el desarrollo web, seguridad informática y tecnologías modernas."
     />
-    <title>Portafolio de Juan Martín Hernández</title>
 
-    <!-- Estilos -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
 
     <!-- Iconos -->
@@ -17,216 +19,440 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="icon" href="assets/imagenes/Logo_JMH.png" type="image/png" />
 
-    <!-- Fuentes -->
+    <link rel="icon" href="assets/imagenes/Logo_JMH.webp" type="image/webp" />
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- AOS -->
-    <link
-      rel="preload"
-      href="https://unpkg.com/aos@next/dist/aos.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
+
     <header>
       <div class="container">
         <div class="menu-toggle" id="menu-toggle">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+
         <nav id="navbar">
           <ul>
             <li><a href="#start">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
+
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+
+            <li><a href="#habilidades">Habilidades</a></li>
+
             <li><a href="#proyectos">Proyectos</a></li>
+
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
+
         <a
           href="https://1drv.ms/b/c/223e641e7dd3c6b8/EbKcpHi-9zNFgsZf72nczOYBXaWIStgiwA2qwzH3W0K7yw?e=JDXOs6"
           target="_blank"
           class="cv-button"
-          >Descargar CV</a
         >
+          Descargar CV
+        </a>
       </div>
     </header>
 
-    <!-- Hero -->
+    <!-- ================= HERO ================= -->
+
     <section class="hero" id="start">
-      <div class="hero_info">
-        <div>
-          <h1><span class="element"></span></h1>
+      <div class="container hero_info">
+        <div class="hero-text">
+          <h1>
+            Hola, soy
+            <span class="element"></span>
+          </h1>
+
           <p>
-            Soy un apasionado por la tecnología y el desarrollo de software,
-            siempre buscando nuevos retos y oportunidades para aprender y
-            crecer.
+            Soy estudiante de Ingeniería de Sistemas y desarrollador de
+            software. Me apasiona crear aplicaciones web modernas, aprender
+            nuevas tecnologías y desarrollar soluciones que realmente aporten
+            valor.
           </p>
+
+          <a href="#proyectos" class="hero-btn"> Ver proyectos </a>
         </div>
+
         <div class="img-jmh">
-          <img
-            src="assets/imagenes/juan.webp"
-            alt="Juan Hernández"
-            width="280"
-            height="425"
-            loading="eager"
-            fetchpriority="high"
-          />
+          <img src="assets/imagenes/juan.webp" alt="Juan Hernández" />
         </div>
       </div>
     </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" data-aos="fade-up">
+    <!-- ==================== SOBRE MI ==================== -->
+
+    <section id="sobre-mi">
       <div class="container">
-        <h2>Sobre Mí</h2>
-        <p>
-          Soy un estudiante de Ingeniería de Sistemas en noveno semestre con una
-          gran pasión por el desarrollo de software. Me motiva aprender
-          constantemente y enfrentar nuevos desafíos. Tengo experiencia en
-          tecnologías como HTML, CSS, JavaScript, PHP, MySQL, Angular, Java y
-          algo de React. Me considero una persona proactiva, rápida para
-          aprender y comprometida con la excelencia en cada proyecto que
-          emprendo. Mi objetivo es seguir desarrollando mis habilidades técnicas
-          y contribuir al éxito de proyectos innovadores en el campo de la
-          tecnología.
-        </p>
+        <div class="about-grid">
+          <div class="about-text">
+            <!--  
+            <span class="section-tag"> Sobre mí </span>
+            -->
+            <h2>Desarrollador de Software e Ingeniería de Sistemas</h2>
+
+            <p>
+              Soy estudiante de Ingeniería de Sistemas con una fuerte pasión por
+              el desarrollo de software, el desarrollo web y la seguridad
+              informática. Disfruto crear aplicaciones funcionales, aprender
+              nuevas tecnologías y enfrentar desafíos que me permitan crecer
+              profesionalmente.
+            </p>
+
+            <p>
+              Durante mi formación he trabajado con tecnologías como HTML, CSS,
+              JavaScript, PHP, MySQL, Angular, Java y React, desarrollando
+              proyectos académicos y personales enfocados en ofrecer soluciones
+              reales.
+            </p>
+
+            <p>
+              Mi objetivo es seguir fortaleciendo mis habilidades técnicas,
+              participar en proyectos innovadores y aportar soluciones de
+              calidad mediante código limpio y buenas prácticas de desarrollo.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="info-item">
+              <i class="fas fa-user-graduate"></i>
+
+              <div>
+                <h4>Formación</h4>
+                <span>Ingeniería de Sistemas</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-code"></i>
+
+              <div>
+                <h4>Especialidad</h4>
+                <span>Desarrollo Web</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-shield-halved"></i>
+
+              <div>
+                <h4>Interés</h4>
+                <span>Seguridad Informática</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fas fa-lightbulb"></i>
+
+              <div>
+                <h4>Aprendizaje</h4>
+                <span>Constante y autodidacta</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Habilidades -->
+    <!-- ==================== HABILIDADES ==================== -->
+
     <section id="habilidades">
-      <h2>Mis Habilidades</h2>
-      <div class="skills-grid">
-        <div class="skill-item" data-skill="HTML5">
-          <i class="devicon-html5-plain"></i>
-        </div>
-        <div class="skill-item" data-skill="CSS3">
-          <i class="devicon-css3-plain"></i>
-        </div>
-        <div class="skill-item" data-skill="JavaScript">
-          <i class="devicon-javascript-plain"></i>
-        </div>
-        <div class="skill-item" data-skill="MySQL">
-          <i class="devicon-mysql-plain"></i>
-        </div>
-        <div class="skill-item" data-skill="Angular">
-          <i class="devicon-angularjs-plain"></i>
-        </div>
-        <div class="skill-item" data-skill="PHP">
-          <i class="devicon-php-plain"></i>
-        </div>
-      </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section id="proyectos" data-aos="fade-up">
       <div class="container">
-        <h2>Proyectos</h2>
-        <div class="projects">
-          <div class="project">
-            <img
-              src="assets/imagenes/proyecto1.webp"
-              width="400"
-              height="200"
-              loading="lazy"
-              alt="Proyecto 1"
-            />
-            <h3>Administración de Restaurante</h3>
-            <p>Descripción del proyecto con acceso a este</p>
+        <!--
+        <span class="section-tag"> Tecnologías </span>
+        -->
+        <h2>Habilidades</h2>
+
+        <div class="skills-grid">
+          <div class="skill-item" data-skill="HTML5">
+            <i class="devicon-html5-plain colored"></i>
           </div>
-          <div class="project">
-            <img
-              src="assets/imagenes/proyecto2.webp"
-              width="400"
-              height="200"
-              loading="lazy"
-              alt="Proyecto 2"
-            />
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto con acceso a este</p>
+
+          <div class="skill-item" data-skill="CSS3">
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+
+          <div class="skill-item" data-skill="JavaScript">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+
+          <div class="skill-item" data-skill="PHP">
+            <i class="devicon-php-plain colored"></i>
+          </div>
+
+          <div class="skill-item" data-skill="Java">
+            <i class="devicon-java-plain colored"></i>
+          </div>
+
+          <div class="skill-item" data-skill="Angular">
+            <i class="devicon-angularjs-plain colored"></i>
+          </div>
+
+          <div class="skill-item" data-skill="MySQL">
+            <i class="devicon-mysql-plain colored"></i>
+          </div>
+
+          <div class="skill-item" data-skill="GitHub">
+            <i class="devicon-github-original"></i>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" data-aos="fade-up">
-      <div class="container contacto-grid">
-        <div class="formulario">
-          <h2>Contáctame</h2>
-          <form id="contact-form">
-            <label for="name">Nombre</label>
-            <input
-              type="text"
-              id="name"
-              name="from_name"
-              placeholder="Tu nombre"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="from_email"
-              placeholder="tuemail@gmail.com"
-              required
-            />
-            <label for="message">Mensaje</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Tu mensaje"
-              required
-            ></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+    <!-- ======================================================
+                        PROYECTOS
+====================================================== -->
 
-        <div class="contact-links">
-          <h3>O conéctate conmigo</h3>
+    <section id="proyectos">
+      <div class="container">
+        <!--
+        <span class="section-tag"> Portafolio </span>
+        -->
+        <h2>Mis Proyectos</h2>
+
+        <div class="projects">
+          <!-- Proyecto 1 -->
+
+          <article class="project" data-project="alertbxt">
+            <div class="project-image">
+              <img src="assets/imagenes/alertbxt.webp" alt="AlertBxt" />
+            </div>
+
+            <div class="project-content">
+              <span class="project-category"> Proyecto de grado </span>
+
+              <h3>AlertBxt</h3>
+
+              <p>
+                Plataforma web para la gestión de alertas, avisos y comunicación
+                entre residentes y administradores.
+              </p>
+
+              <span class="project-link">
+                Ver detalles
+
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+
+          <article class="project" data-project="proyecto2">
+            <div class="project-image">
+              <img src="assets/imagenes/proyecto2.webp" alt="Proyecto 2" />
+            </div>
+
+            <div class="project-content">
+              <span class="project-category"> Desarrollo Web </span>
+
+              <h3>Proyecto 2</h3>
+
+              <p>
+                Próximamente agregaré más proyectos personales y académicos.
+              </p>
+
+              <span class="project-link">
+                Ver detalles
+
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+
+    <section id="contacto" data-aos="fade-up">
+      <div class="container">
+        <h2>Contáctame</h2>
+
+        <div class="contact-container">
+          <!-- Formulario -->
+
+          <div class="contact-form">
+            <h3>Envíame un mensaje</h3>
+
+            <form id="contact-form">
+              <div class="input-group">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="from_name"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="from_email"
+                  placeholder="correo@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="message">Mensaje</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Escribe tu mensaje..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <!-- Información -->
+
+          <div class="contact-info">
+            <h3>También puedes encontrarme en</h3>
+
+            <p>
+              Siempre estoy abierto a nuevas oportunidades, colaboraciones o
+              simplemente conversar sobre desarrollo de software y tecnología.
+            </p>
+
+            <div class="social-buttons">
+              <a
+                href="https://www.linkedin.com/in/juan-hernandez-32a39717b/"
+                target="_blank"
+                class="social-btn linkedin"
+              >
+                <i class="fab fa-linkedin"></i>
+
+                LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/Ju4nmar"
+                target="_blank"
+                class="social-btn github"
+              >
+                <i class="fab fa-github"></i>
+
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================================================
+                    MODAL PROYECTO
+===================================================-->
+
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">
+          <i class="fas fa-times"></i>
+        </span>
+
+        <div class="modal-grid">
+          <div class="modal-image">
+            <img id="modal-image" src="" alt="Proyecto" />
+          </div>
+
+          <div class="modal-info">
+            <h2 id="modal-title"></h2>
+
+            <p id="modal-description"></p>
+
+            <h3>Tecnologías</h3>
+
+            <div id="modal-technologies" class="modal-technologies"></div>
+
+            <h3>Características</h3>
+
+            <ul id="modal-features"></ul>
+
+            <div class="modal-buttons">
+              <a id="modal-demo" class="modal-btn" target="_blank">
+                <i class="fas fa-globe"></i>
+
+                Demo
+              </a>
+
+              <a id="modal-github" class="modal-btn github" target="_blank">
+                <i class="fab fa-github"></i>
+
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== FOOTER ==================== -->
+
+    <footer>
+      <div class="container footer-content">
+        <h3>Juan Martín Hernández</h3>
+
+        <p>Desarrollador de Software</p>
+
+        <div class="footer-social">
+          <a href="https://github.com/Ju4nmar" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+
           <a
             href="https://www.linkedin.com/in/juan-hernandez-32a39717b/"
             target="_blank"
-            class="linkedin contact-btn"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
           >
-          <!--
-          <a
-            href="https://wa.me/57numero"
-            target="_blank"
-            class="whatsapp contact-btn"
-            ><i class="fab fa-whatsapp"></i> WhatsApp</a
-          >
-          -->
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Juan Martín Hernández. Todos los derechos reservados.</p>
+        <span> © 2026 Juan Martín Hernández </span>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-      defer
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script src="script/script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="script/script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
   </body>
 </html>
