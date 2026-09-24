@@ -1,0 +1,8 @@
+node_modules
+dist
+.vite
+
+# Herramientas de Claude Code / skills locales (no forman parte del sitio)
+.claude
+.agents
+skills-lock.json
