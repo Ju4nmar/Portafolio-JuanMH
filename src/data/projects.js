@@ -61,6 +61,6 @@ export const PROJECTS = [
       "Diseño responsive",
     ],
     github: "https://github.com/Ju4nmar/trazo",
-    demo: "https://gestor-tareas-woad.vercel.app",
+    demo: "https://trazo-app-woad.vercel.app/",
   },
 ];
